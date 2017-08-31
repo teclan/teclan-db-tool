@@ -39,7 +39,7 @@ public class Main {
                         + "\t即可将文件 /home/dev/fabfile.py 插入到 maoguang 表\n"
                         + "\t的 `a_blob` 字段。\n"
                         + "\tUPDATE 和 update 不支持 #file:file-path 形式\n"
-                        + "\n使用本程序操作数据库时，直接在控制台至此嗯 java -jar 加此 jar包文件即可。");
+                        + "\n使用本程序操作数据库时，直接在控制台执行java -jar 加此jar包文件即可。");
 
     }
 
