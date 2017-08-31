@@ -1,0 +1,13 @@
+/.classpath
+/.project
+/.settings/
+/.vagrant/
+/db/
+/target/
+/log/
+/.env
+*.pyc
+SecCardLog
+pcrMeasureLog
+*.iml
+*.idea
