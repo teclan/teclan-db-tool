@@ -52,6 +52,10 @@ public class Main {
                 System.out.print("输入SQL：");
                 sql = console.readLine();
 
+                if (sql.lastIndexOf(";") == sql.length() - 1) {
+                    sql = sql.substring(0, sql.length() - 1);
+                }
+
                 String tmp = sql.replaceAll("(?i)delete", "delete")
                         .replaceAll("(?i)update", "update")
                         .replaceAll("(?i)select", "select").trim();
@@ -68,8 +72,9 @@ public class Main {
                 }
 
             } catch (Exception e) {
-                System.out.println(
-                        String.format("%s \n\n", "执行失败 ... " + e.getMessage()));
+                System.out.println(String.format("%s \n\n", "执行失败 ... " + e));
+            } finally {
+                service.close();
             }
         }
     }
